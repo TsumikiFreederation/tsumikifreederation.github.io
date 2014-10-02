@@ -1,9 +1,95 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="testbed.css">
+</head>
+
 <body>
 
-<h2>Testbeds that have been developed with similar components</h2>
-<img src="tsumiki-related-work-table.jpg" alt="related work" style="width:912px;height:570px">
+<h2 align="center">Testbeds that have been developed with similar
+components</h2>
+
+<!--
+<img src="tsumiki-related-work-table.jpg" alt="related work"
+style="width:912px;height:570px">
+//-->
+
+<table border="1" style="width:100%">
+  <TR>
+    <TH>Testbed</TH>
+    <TH>Sandbox</TH>
+    <TH>Resource manager</TH>
+    <TH>Device manager</TH>
+    <TH>Custom installer builder</TH>
+    <TH>Experiment management tool</TH>
+    <TH>Clearinghouse</TH>
+    <TH>Lookup service</TH>
+  </TR>
+
+  <TR>
+    <TD><a href="http://dl.acm.org/citation.cfm?id=510740">RON</a></TD>
+    <TD>RON client, conduit API <sup><a href="#fn1" id="ref1">1</a></sup></TD>
+    <TD>RON router, forwarder (?)</TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+    <TD>RON membership manager, flooder</TD>
+  </TR>
+
+  <TR>
+    <TD><a
+    href="https://www.usenix.org/legacy/event/osdi02/tech/full_papers/vahdat/vahdat.pdf">ModelNet
+    </a></TD>
+    <TD>Virtual edge node, core node</TD>
+    <TD>Binding, Run phases (?)</TD>
+    <TD>Assignment phase (?)</TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+  </TR>
+
+  <TR>
+    <TD><a
+    href="http://dl.acm.org/citation.cfm?id=844152">Emulab</a></TD>
+    <TD>Virtual nodes, OpenVZ linux containers, Xen <sup><a
+    href="#fn2" id="ref2">2</a></sup> </TD>
+    <TD>Control infrastructure with an event system</TD>
+    <TD>Global resource allocation process assign</TD>
+    <TD>NA</TD>
+    <TD>Emulab web interface</TD>
+    <TD>masterhost</TD>
+    <TD>NA</TD>
+  </TR>
+
+  <TR>
+    <TD><a
+    href="http://dl.acm.org/citation.cfm?id=1298489">PlanetLab</a></TD>
+    <TD>VM, slice</TD>
+    <TD>Node manager</TD>
+    <TD>Stork</TD>
+    <TD>NA (?)</TD>
+    <TD>Slice creation service, ssh</TD>
+    <TD>PlanetLab Central</TD>
+    <TD>NA (?)</TD>
+  </TR>
+  
+</table>
+
+<br>
+<hr></hr>
+
+<sup id="fn1">1. The API that a RON client uses to send and receive
+packets. <a href="#ref1" title="Jump back to footnote 1 in the
+text.">back </a></sup><br>
+
+
+<sup id="fn2">2. <a href="https://wiki.emulab.net/wiki/vnodes ">Emulab
+wiki.</a> <a href="#ref2" title="Jump back to footnote 2 in the
+text.">back </a></sup>
+
 
 </body>
 </html>
