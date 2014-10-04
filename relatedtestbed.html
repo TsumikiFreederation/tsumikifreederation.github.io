@@ -29,7 +29,7 @@ style="width:912px;height:570px">
 
   <TR>
     <TD><a href="http://dl.acm.org/citation.cfm?id=510740">RON</a> (SOSP'01)</TD>
-    <TD>RON client, conduit API <sup><a href="#fn1" id="ref1">1</a></sup></TD>
+    <TD>RON client, <font face="verdana">conduit</font> API <sup><a href="#fn1" id="ref1">1</a></sup></TD>
     <TD>RON router, forwarder (?)</TD>
     <TD>NA</TD>
     <TD>NA</TD>
@@ -148,13 +148,15 @@ style="width:912px;height:570px">
     <TD><a
     href="https://www.usenix.org/legacy/event/nsdi09/tech/full_papers/leonini/leonini.pdf">SPLAY</a>
     (NSDI'09)</TD>
-    <TD></TD>
-    <TD></TD>
-    <TD></TD>
-    <TD></TD>
-    <TD></TD>
-    <TD></TD>
-    <TD></TD>
+    <TD>Sandboxed <sup><a href="#fn4" id="ref4">4</a></sup> process
+    forked by <font face="verdana">splayd</font>
+    and libraries</TD>
+    <TD>Daemon <font face="verdana">splayd</font></TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+    <TD>Command line, Web interface, churn management system</TD>
+    <TD>Controller <font face="verdana">splayctl</font></TD>
+    <TD>Controller (keeps track of all daemons and processes)</TD>
   </TR>
 
 
@@ -204,18 +206,21 @@ style="width:912px;height:570px">
 
 <sup id="fn1">1. The API that a RON client uses to send and receive
 packets. <a href="#ref1" title="Jump back to footnote 1 in the
-text.">back </a></sup><br>
+text.">back</a></sup><br>
 
 
 <sup id="fn2">2. <a href="https://wiki.emulab.net/wiki/vnodes">Emulab
 wiki</a>. <a href="#ref2" title="Jump back to footnote 2 in the
-text.">back </a></sup><br>
+text.">back</a></sup><br>
 
 
 <sup id="fn3">3. "An Experimentation Workbench for Replayable
 Networking Research", NSDI'07, <a
 href="https://www.usenix.org/legacy/event/nsdi07/tech/full_papers/eide/eide_html/">link</a>. <a
-href="#ref3" title="Jump back to footnote 3 in the text.">back </a></sup>
+href="#ref3" title="Jump back to footnote 3 in the text.">back</a></sup><br>
+
+<sup id="fn4">4. A Lua-based sandbox. <a href="#ref4" title="Jump back
+to footnote 4 in the text.">back</a></sup><br>
 
 </body>
 </html>
