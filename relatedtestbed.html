@@ -28,7 +28,7 @@ of every research project, prompting continual efforts to develop
 new testbeds.<br>
 
 We present Tsumiki, a set of reusable components for building network
-testbeds. These components are re- purposeable and interchangeable in
+testbeds. These components are repurposeable and interchangeable in
 deriving new kinds of testbeds. We demonstrate that Tsumiki components
 are well-suited to implementing new, diverse, and useful types of
 testbeds. We describe three testbeds that were built using Tsumiki
@@ -42,16 +42,159 @@ experience with networked testbeds are able to use Tsumiki to create a
 testbed with new functionality and run an experiment in under an
 hour. <br></p>
 
+<p><b>Note:</b> The following testbeds are ordered alphabetically. </p>
+
 <table border="1" style="width:100%">
   <TR>
     <TH>Testbed</TH>
     <TH>Sandbox</TH>
     <TH>Resource manager</TH>
     <TH>Device manager</TH>
-    <TH>Custom installer builder</TH>
     <TH>Experiment management tool</TH>
+    <TH>Custom installer builder</TH>
     <TH>Clearinghouse</TH>
     <TH>Lookup service</TH>
+    <TH>Reference publication</TH>
+  </TR>
+
+  <TR>
+    <TD><a href="http://projectbismark.net/">BISmark</a></TD>
+    <TD>BISmark routers <sup><a href="#fn5" id="ref5">5</a></sup></TD>
+    <TD>Measurement servers</TD>
+    <TD>Custom package management utilities on top of OpenWrt's
+    built-in <font face="verdana">opkg</font></TD>
+    <TD>Data collection servers, <font
+    face="verdana">bismark-data-transmit</font> </TD>
+    <TD>Package repository servers</TD>
+    <TD>User registration system</TD>
+    <TD>Monitoring servers</TD>
+    <TD><a
+    href="http://dl.acm.org/citation.cfm?id=2018452">SIGCOMM'11</a>,
+    <a href="https://www.usenix.org/conference/atc14/technical-sessions/presentation/sundaresan">ATC'14</a></TD>
+  </TR>
+
+
+  <TR>
+    <TD><a
+    href="http://boinc.berkeley.edu/">BOINC</a></TD>
+    <TD>BOINC client, general preferences</TD>
+    <TD>Scheduling servers, data servers</TD>
+    <TD>BOINC installer tool</TD>
+    <TD>Client GUI</TD>
+    <TD>anonymous platform mechanism</TD>
+    <TD>Project master URL</TD>
+    <TD>NA</TD>
+    <TD><a href="http://dl.acm.org/citation.cfm?id=1033223">GC'04</a></TD>
+  </TR>
+
+
+  <TR>
+    <TD><a
+    href="http://www.aqualab.cs.northwestern.edu/projects/115-dash-dual-purpose-platform">
+    Dasu</a></TD>
+    <TD>Dasu client's experiment sandbox</TD>
+    <TD>Configuration Service</TD>
+    <TD>BitTorrent extension</TD>
+    <TD>Data Service, Secondary Experiment Administration Service</TD>
+    <TD>NA</TD>
+    <TD>Primary Experiment Administration Service</TD>
+    <TD>Coordination Service</TD>
+    <TD><a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/sanchez">NSDI'13</a></TD>
+  </TR>
+  
+
+  <TR>
+    <TD><a href="http://deter-project.org/">DETER</a></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD><a href="https://www.acsac.org/2011/program/keynotes/benzel.pdf">ACSAC'11</a></TD>
+  </TR>
+
+
+  <TR>
+    <TD><a href="http://www.netdimes.org/new/">DIMES</a></TD>
+    <TD>DIMES agent</TD>
+    <TD>Experiment planning system</TD>
+    <TD>Auto update mechanism</TD>
+    <TD>Management system</TD>
+    <TD>NA</TD>
+    <TD>Experiment planning system</TD>
+    <TD>Discovery</TD>
+    <TD><a href="http://arxiv.org/pdf/cs/0506099.pdf">CCR'05</a></TD>
+  </TR>
+
+
+  <TR>
+    <TD><a href="http://www.emulab.net/">Emulab</a></TD>
+    <TD>Virtual nodes, OpenVZ linux containers, Xen <sup><a
+    href="#fn2" id="ref2">2</a></sup> </TD>
+    <TD>Control infrastructure</TD>
+    <TD>Global resource allocation process assign</TD>
+    <TD>Emulab web interface</TD>
+    <TD>NA</TD>
+    <TD>masterhost</TD>
+    <TD>NA</TD>
+    <TD><a href="http://dl.acm.org/citation.cfm?id=844152">OSDI'02</a></TD>
+  </TR>
+
+
+  <TR>
+    <TD><a href="http://fathom.icsi.berkeley.edu/">Fathom</a></TD>
+    <TD>JavaScript extension for Firefox</TD>
+    <TD>Fathom object, API, socket worker</TD>
+    <TD>Firefox</TD>
+    <TD>Firefox browser tab</TD>
+    <TD>Fathom script</TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+    <TD><a href="http://dl.acm.org/citation.cfm?id=2398786">IMC'12</a></TD>
+  </TR>
+
+
+  <TR>
+    <TD>Flexlab</TD>
+    <TD>Emulab container</TD>
+    <TD>Emulab's control infrastructure</TD>
+    <TD>Application monitor</TD>
+    <TD>Experimentation workbench <sup><a href="#fn3"
+    id="ref3">3</a></sup></TD>
+    <TD>NA</TD>
+    <TD>Emulab's masterhost</TD>
+    <TD>NA</TD>
+    <TD><a href="https://www.cs.utah.edu/flux/papers/flexlab-nsdi07.pdf">NSDI'07</a></TD>
+  </TR>
+
+
+  <TR>
+    <TD><a href="http://modelnet.ucsd.edu/">ModelNet</a></TD>
+    <TD>Virtual edge node, core node</TD>
+    <TD>Binding, Run phases (?)</TD>
+    <TD>Assignment phase (?)</TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+    <TD>NA</TD>
+    <TD><a
+    href="https://www.usenix.org/legacy/event/osdi02/tech/full_papers/vahdat/vahdat.pdf">
+    OSDI'02</a></TD>
+  </TR>
+  
+
+  <TR>
+    <TD><a href="https://www.planet-lab.org/">PlanetLab</a></TD>
+    <TD>VM, slice</TD>
+    <TD>Node manager</TD>
+    <TD>Stork</TD>
+    <TD>Slice creation service, ssh</TD>
+    <TD>NA (?)</TD>
+    <TD>PlanetLab Central</TD>
+    <TD>NA (?)</TD>
+    <TD><a href="http://dl.acm.org/citation.cfm?id=1298489">OSDI'06</a></TD>
   </TR>
 
   <TR>
@@ -63,90 +206,7 @@ hour. <br></p>
     <TD>NA</TD>
     <TD>NA</TD>
     <TD>RON membership manager, flooder</TD>
-  </TR>
-  
-
-  <TR>
-    <TD><a href="http://modelnet.ucsd.edu/">ModelNet</a></TD>
-    <TD>Virtual edge node, core node</TD>
-    <TD>Binding, Run phases (?)</TD>
-    <TD>Assignment phase (?)</TD>
-    <TD>NA</TD>
-    <TD>NA</TD>
-    <TD>NA</TD>
-    <TD>NA</TD>
-  </TR>
-  
-
-  <TR>
-    <TD><a href="http://www.emulab.net/">Emulab</a></TD>
-    <TD>Virtual nodes, OpenVZ linux containers, Xen <sup><a
-    href="#fn2" id="ref2">2</a></sup> </TD>
-    <TD>Control infrastructure</TD>
-    <TD>Global resource allocation process assign</TD>
-    <TD>NA</TD>
-    <TD>Emulab web interface</TD>
-    <TD>masterhost</TD>
-    <TD>NA</TD>
-  </TR>
-
-
-  <TR>
-    <TD><a
-    href="http://boinc.berkeley.edu/">BOINC</a></TD>
-    <TD>BOINC client, general preferences</TD>
-    <TD>Scheduling servers, data servers</TD>
-    <TD>BOINC installer tool</TD>
-    <TD>anonymous platform mechanism</TD>
-    <TD>Client GUI</TD>
-    <TD>Project master URL</TD>
-    <TD>NA</TD>
-  </TR>
-
-
-  <TR>
-    <TD><a href="http://www.netdimes.org/new/">DIMES</a></TD>
-    <TD>DIMES agent</TD>
-    <TD>Experiment planning system</TD>
-    <TD>Auto update mechanism</TD>
-    <TD>NA</TD>
-    <TD>Management system</TD>
-    <TD>Experiment planning system</TD>
-    <TD>Discovery</TD>
-  </TR>
-  
-
-  <TR>
-    <TD><a href="https://www.planet-lab.org/">PlanetLab</a></TD>
-    <TD>VM, slice</TD>
-    <TD>Node manager</TD>
-    <TD>Stork</TD>
-    <TD>NA (?)</TD>
-    <TD>Slice creation service, ssh</TD>
-    <TD>PlanetLab Central</TD>
-    <TD>NA (?)</TD>
-  </TR>
-
-  <TR>
-    <TD>VINI</TD>
-    <TD>PlanetLab slice, extended CPU scheduling, network device isolation</TD>
-    <TD>Same as PlanetLab (?)</TD>
-    <TD>Same as PlanetLab (?)</TD>
-    <TD>NA (?)</TD>
-    <TD>Same as PlanetLab (?)</TD>
-    <TD>Same as PlanetLab (?)</TD>
-    <TD>NA (?)</TD>
-  </TR>
-
-  <TR>
-    <TD>Flexlab</TD>
-    <TD>Emulab container</TD>
-    <TD>Emulab's control infrastructure</TD>
-    <TD>Application monitor</TD>
-    <TD>NA</TD>
-    <TD>Experimentation workbench <sup><a href="#fn3" id="ref3">3</a></sup></TD>
-    <TD>Emulab's masterhost</TD>
-    <TD>NA</TD>
+    <TD><a href="http://dl.acm.org/citation.cfm?id=502048">SOSP'01</a></TD>
   </TR>
 
 
@@ -155,12 +215,26 @@ hour. <br></p>
     <TD>Satellite, planet</TD>
     <TD>Same as PlanetLab (?)</TD>
     <TD>Same as PlanetLab (?)</TD>
-    <TD>Satellite helper's OS-specific installers</TD>
     <TD>Planet proxy</TD>
+    <TD>Satellite helper's OS-specific installers</TD>
     <TD>Same as PlanetLab (?)</TD>
     <TD>Satellite helper's periodic heartbeat to planet proxy</TD>
+    <TD><a href="http://dl.acm.org/citation.cfm?id=1402994">SIGCOMM'08</a></TD>
   </TR>
 
+
+  <TR>
+    <TD><a href="https://seattle.poly.edu/">Seattle</a></TD>
+    <TD>Vessel</TD>
+    <TD>Node manager</TD>
+    <TD>Software updater</TD>
+    <TD><font face="verdana">seash</font>, etc.</TD>
+    <TD>Seattle custom installer builder</TD>
+    <TD>Seattle clearinghouse</TD>
+    <TD>Adtertising service</TD>
+    <TD><a href="http://dl.acm.org/citation.cfm?id=1508905">SIGCSE'09</a></TD>
+  </TR>
+ 
 
   <TR>
     <TD><a href="http://www.splay-project.org/">SPLAY</a></TD>
@@ -169,52 +243,25 @@ hour. <br></p>
     and libraries</TD>
     <TD>Daemon <font face="verdana">splayd</font></TD>
     <TD>NA</TD>
-    <TD>NA</TD>
     <TD>Command line, Web interface, churn management system</TD>
+    <TD>NA</TD>
     <TD>Controller <font face="verdana">splayctl</font></TD>
     <TD>Controller (keeps track of all daemons and processes)</TD>
+    <TD><a href="https://www.usenix.org/legacy/event/nsdi09/tech/full_papers/leonini/leonini.pdf">NSDI'09</a></TD>
   </TR>
 
 
   <TR>
-    <TD><a href="http://projectbismark.net/">BISmark</a></TD>
-    <TD>BISmark routers <sup><a href="#fn5" id="ref5">5</a></sup></TD>
-    <TD>Measurement servers</TD>
-    <TD>Custom package management utilities on top of OpenWrt's
-    built-in <font face="verdana">opkg</font></TD>
-    <TD>Package repository servers</TD>
-    <TD>Data collection servers, <font
-    face="verdana">bismark-data-transmit</font> </TD>
-    <TD>User registration system</TD>
-    <TD>Monitoring servers</TD>
+    <TD>VINI</TD>
+    <TD>PlanetLab slice, extended CPU scheduling, network device isolation</TD>
+    <TD>Same as PlanetLab (?)</TD>
+    <TD>Same as PlanetLab (?)</TD>
+    <TD>Same as PlanetLab (?)</TD>
+    <TD>NA (?)</TD>
+    <TD>Same as PlanetLab (?)</TD>
+    <TD>NA (?)</TD>
+    <TD><a href="http://dl.acm.org/citation.cfm?id=1159916">SIGCOMM'06</a></TD>
   </TR>
-
-
-  <TR>
-    <TD><a href="http://fathom.icsi.berkeley.edu/">Fathom</a></TD>
-    <TD>JavaScript extension for Firefox</TD>
-    <TD>Fathom object, API, socket worker</TD>
-    <TD>Firefox</TD>
-    <TD>Fathom script</TD>
-    <TD>Firefox browser tab</TD>
-    <TD>NA</TD>
-    <TD>NA</TD>
-  </TR>
-
-
-  <TR>
-    <TD><a
-    href="http://www.aqualab.cs.northwestern.edu/projects/115-dash-dual-purpose-platform">
-    Dasu</a></TD>
-    <TD>Dasu client's experiment sandbox</TD>
-    <TD>Configuration Service</TD>
-    <TD>BitTorrent extension</TD>
-    <TD>NA</TD>
-    <TD>Data Service, Secondary Experiment Administration Service</TD>
-    <TD>Primary Experiment Administration Service</TD>
-    <TD>Coordination Service</TD>
-  </TR>
-  
   
 </table>
 
